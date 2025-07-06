@@ -21,7 +21,7 @@ export default function App() {
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-black/70 shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold tracking-widest text-red-500">GITESH</h1>
+          <h1 className="text-xl font-bold tracking-widest text-red-500">Gitesh</h1>
           <ul className="flex gap-6 text-sm">
             {["About", "Skills", "Projects", "Contact"].map((item) => (
               <li key={item}>
