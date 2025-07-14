@@ -172,7 +172,6 @@ export default function App() {
   </motion.div>
 </Section>
 
-{/* Certificates */}
 <Section title="Certificates">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     {[
@@ -190,6 +189,11 @@ export default function App() {
         title: "Data Analytics Job Simulation",
         platform: "Deloitte (via Forage)",
         link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_AsLubtupozDyQxyTx_1751256685736_completion_certificate.pdf"
+      },
+      {
+        title: "Microsoft 5 Days Boot Camp SQL",
+        platform: "Microsoft",
+        link: "https://www.cert.devtown.in/verify/2iReRr"
       }
     ].map((cert, i) => (
       <motion.a
@@ -207,6 +211,7 @@ export default function App() {
     ))}
   </div>
 </Section>
+
 
 
 
