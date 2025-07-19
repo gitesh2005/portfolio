@@ -176,6 +176,24 @@ export default function App() {
               </div>
             </div>
           </motion.div>
+          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 200 }}>
+            <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:shadow-red-500/40 transition">
+              <h3 className="text-xl font-semibold text-red-400">
+                Car Price Prediction App (Streamlit)
+              </h3>
+              <p className="mt-2 text-gray-300">
+                Built a machine learning web app to predict a plant is diseased or not  using decision Tree algorithm and Streamlit deployment.
+              </p>
+              <p className="mt-2 text-sm text-gray-500">
+                Tools: Python, Pandas, Scikit-Learn, Streamlit
+              </p>
+              <div className="mt-4 text-sm">
+                <a href="https://plant-disease-prediction-by-gitesh.streamlit.app/ " target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                  🚀 Launch App
+                </a>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </Section>
 
