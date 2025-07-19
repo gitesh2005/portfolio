@@ -161,7 +161,7 @@ export default function App() {
           <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 200 }}>
             <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:shadow-red-500/40 transition">
               <img
-                src="/car-price-prediction.png"
+                src="car-price-prediction photo.png"
                 alt="Car Price Project"
                 className="rounded-md mb-4"
               />
