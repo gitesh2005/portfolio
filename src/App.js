@@ -51,7 +51,7 @@ export default function App() {
           Aspiring Data Analyst | Turning Data into Decisions
         </motion.p>
         <motion.div className="mt-6 flex gap-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
-          <a href="/Gitesh.pdf" download>
+          <a href="gitesh.pdf" download>
             <button className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full transition shadow-md hover:shadow-red-500/40">
               Download Resume
             </button>
@@ -153,25 +153,6 @@ export default function App() {
                 </a>
                 <a href="/healthcare_dashboard.pbix" download className="text-blue-400 hover:underline">
                   📊 Download Final Report (.pbix)
-                </a>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 200 }}>
-            <div className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:shadow-red-500/40 transition">
-              <h3 className="text-xl font-semibold text-red-400">
-               🚗 Car Price Prediction App (Streamlit)
-              </h3>
-              <p className="mt-2 text-gray-300">
-                Built a machine learning web app to predict used car prices using linear regression and Streamlit deployment.
-              </p>
-              <p className="mt-2 text-sm text-gray-500">
-                Tools: Python, Pandas, Scikit-Learn, Streamlit
-              </p>
-              <div className="mt-4 text-sm">
-                <a href="https://car-price-prediction-by-gitesh.streamlit.app/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                  🚀 Launch App
                 </a>
               </div>
             </div>
