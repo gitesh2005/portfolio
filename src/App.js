@@ -55,6 +55,22 @@ const projects = [
       ],
       results: "A functional Streamlit application that significantly speeds up the initial screening process, allowing recruiters to focus on the most qualified candidates."
     }
+  },
+  {
+    title: "🔥 Calorie Burned Prediction (Streamlit)",
+    description: "Developed a machine learning web app to estimate calories burned based on user activity data using regression models and deployed with Streamlit.",
+    tools: "Python, Pandas, Scikit-Learn, Streamlit",
+    githubLink: "https://github.com/gitesh2005/calorie_burned_predicition",
+    liveLink: "https://gitesh2005-calorie-burned-predicition-app-0wwpso.streamlit.app/",
+    caseStudy: {
+      problem: "Fitness enthusiasts and individuals tracking their health often want a quick way to estimate calories burned from various activities without relying on expensive devices. This app provides an instant, data-driven calorie estimation.",
+      process: [
+        "Data Collection: Used a dataset containing personal details (age, gender, height, weight) and activity metrics (duration, heart rate, body temperature, etc.).",
+    "Model Training: Trained a regression model using Scikit-Learn to predict calories burned, achieving high accuracy on the test set.",
+    "Web App Deployment: Built an interactive Streamlit interface where users can input their details and activity stats to receive a calorie burn prediction instantly."
+      ],
+      results: "A live web app that quickly predicts calories burned for different activities, helping users monitor and manage their fitness goals."
+    }
   }
 ];
 
@@ -258,7 +274,8 @@ export default function App() {
             { title: "Data Analyst in Power BI", platform: "DataCamp", link: "https://www.datacamp.com/statement-of-accomplishment/track/9b5aed4fb70ab980a2928ab4998a45de675911c3?raw=1" },
             { title: "Data Analytics & Visualization Job Simulation", platform: "Accenture (via Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_AsLubtupozDyQxyTx_1751256684496_completion_certificate.pdf" },
             { title: "Data Analytics Job Simulation", platform: "Deloitte (via Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_AsLubtupozDyQxyTx_1751256685736_completion_certificate.pdf" },
-            { title: "Microsoft 5 Days Boot Camp SQL", platform: "Microsoft", link: "https://www.cert.devtown.in/verify/2iReRr" }
+            { title: "Microsoft 5 Days Boot Camp SQL", platform: "Microsoft", link: "https://www.cert.devtown.in/verify/2iReRr" },
+            { title: "Machine Learning with Generative AI (Summer Training)" , platform: "W3grads | GLA University", link: "https://drive.google.com/file/d/1Dm1Cio_uzmJXw4vEFdLpeZDnLWzpofHn/view?usp=sharing"}
           ].map((cert, i) => (
             <motion.a key={i} href={cert.link} target="_blank" rel="noopener noreferrer" whileHover={{ y: -4 }} className="block bg-[#1a1a1a] p-5 rounded-lg shadow hover:shadow-red-500/40 transition">
               <h4 className="text-red-400 font-semibold text-lg">{cert.title}</h4>
