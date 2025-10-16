@@ -298,6 +298,7 @@ export default function App() {
           <a href="https://github.com/gitesh2005" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
           <a href="https://wa.me/918307552640" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">WhatsApp</a>
           <a href="mailto:giteshsorout@gmail.com" className="hover:text-white transition">Email</a>
+          <a href="https://leetcode.com/u/64yrbUHtGy/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Leetcode</a>
         </motion.div>
       </Section>
 
