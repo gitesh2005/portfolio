@@ -9,21 +9,23 @@ const skills = [
 // Project data array with your GitHub links
 const projects = [
   {
-    title: "Healthcare Data Analysis (Power BI)",
-    description: "Built a Power BI dashboard to analyze hospital inpatient discharge data focusing on hip replacement trends, costs, and regional patterns.",
-    tools: "Power BI, CSV Dataset, Data Cleaning, Visualization",
-    githubLink: null, // Set to null as it has no repo
-    liveLink: null, 
-    caseStudy: {
-      problem: "Hospitals need to understand trends in patient discharges to optimize resource allocation and reduce costs. The goal was to analyze inpatient discharge data to identify key patterns related to costs, procedures, and regional differences.",
-      process: [
-        "Data Cleaning: Used Python (Pandas) to clean and preprocess the raw CSV dataset, handling null values and standardizing formats.",
-        "Data Modeling: Established relationships between different data tables within Power BI to create a robust and efficient model.",
-        "Dashboard Development: Used DAX to write key measures like 'Average Cost per Discharge'. Built an interactive dashboard with slicers for region, year, and procedure type."
-      ],
-      results: "The final dashboard revealed that hip replacement procedures in the Western region had an average cost 15% higher than the national average, providing a clear area for administrators to investigate."
-    }
-  },
+  title: "Healthcare Data Analysis (Power BI)",
+  description: "Built a Power BI dashboard to analyze hospital inpatient discharge data focusing on hip replacement trends, costs, and regional patterns.",
+  tools: "Power BI, CSV Dataset, Data Cleaning, Visualization",
+
+  liveLink: "https://app.powerbi.com/reportEmbed?reportId=2e155d9f-16d9-4318-a3e8-9d1857de41b8&autoAuth=true&ctid=b5f86f36-3df0-46d1-beb7-50fa19e96f79",
+
+  caseStudy: {
+    problem: "Hospitals need to understand trends in patient discharges...",
+    process: [
+      "Data Cleaning using Pandas",
+      "Data Modeling in Power BI",
+      "DAX Measures Creation"
+    ],
+    results: "Identified 15% higher cost trend in Western region."
+  }
+},
+
   {
     title: "🌳 Plant Disease Prediction (Streamlit)",
     description: "Built a machine learning web app to predict if a plant is diseased using a decision tree algorithm and Streamlit deployment.",
