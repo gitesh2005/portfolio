@@ -2,8 +2,20 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const skills = [
-  "SQL", "Python", "Pandas", "Numpy", 
-  "Power BI", "Tableau", "Matplotlib", "Machine Learning"
+  "SQL",
+  "Python",
+  "Excel",
+  "Power BI",
+  "Pandas",
+  "NumPy",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Node.js",
+  "Express.js",
+  "Machine Learning",
+  "Java",
+  "DSA"
 ];
 
 // Project data array with your GitHub links
@@ -43,21 +55,21 @@ const projects = [
     }
   },
   {
-    title: "🤖 AI Resume Screener (Streamlit)",
-    description: "Built an AI Resume Screener that automates resume evaluation using ML and GPT-based summary generation.",
-    tools: "Python, Pandas, Scikit-Learn, Streamlit, Gen AI",
-    githubLink: "https://github.com/gitesh2005/resume-screener",
-    liveLink: "https://resume-screener-by-gitesh.streamlit.app/",
-    caseStudy: {
-      problem: "HR departments and recruiters spend countless hours manually screening resumes. This project aimed to automate the process by parsing resumes, matching them to a job description, and generating a summary.",
-      process: [
-        "PDF Parsing: Used Python libraries to extract raw text from uploaded PDF resumes.",
-        "Keyword Matching: Implemented a scoring system based on keyword matching between the resume text and a given job description using Scikit-Learn's text analysis tools.",
-        "AI Summary: Integrated a Generative AI model to provide a concise summary of the candidate's skills and a percentage match score."
-      ],
-      results: "A functional Streamlit application that significantly speeds up the initial screening process, allowing recruiters to focus on the most qualified candidates."
-    }
-  },
+  title: "💼 Employee Payroll Management System",
+  description: "Developed a full-stack employee payroll management system to manage employee records and perform CRUD operations efficiently.",
+  tools: "HTML, CSS, JavaScript, Node.js, Express.js, JSON",
+  githubLink: "https://github.com/gitesh2005/Employee-PayRoll-System",
+  liveLink: "https://employee-payroll-system-frontend.netlify.app/",
+  caseStudy: {
+    problem: "Managing employee records manually can be time-consuming and difficult to organize efficiently.",
+    process: [
+      "Built a responsive frontend using HTML, CSS, and JavaScript for employee data management.",
+      "Implemented backend functionality using Node.js and Express.js to handle CRUD operations.",
+      "Used JSON as a data source to store and manage employee details."
+    ],
+    results: "Created a working web application that allows adding, viewing, updating, and deleting employee records."
+  }
+},
   {
     title: "🔥 Calorie Burned Prediction (Streamlit)",
     description: "Developed a machine learning web app to estimate calories burned based on user activity data using regression models and deployed with Streamlit.",
@@ -160,14 +172,15 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Hi, I'm Gitesh
+         Hi, I'm Gitesh
         </motion.h2>
         <motion.p className="mt-4 text-lg md:text-xl text-gray-300"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          Data Analyst | Turning Data into Decisions
+          B.Tech Student | Building Practical Solutions with Data and Development
+          Focused on SQL, Python, Power BI, Web Development, and Problem Solving.
         </motion.p>
         <motion.div className="mt-6 flex gap-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
           <a href="#projects">
@@ -209,44 +222,60 @@ export default function App() {
 </Section>
 
       <Section title="Skills">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          {skills.map((skill, i) => (
-            <motion.div
-              key={skill}
-              className="bg-[#1f1f1f] text-center py-3 rounded-lg text-red-400 shadow hover:shadow-red-600/50 transition"
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: i * 0.1 }}
-            >
-              {skill}
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+    {skills.map((skill, i) => (
+      <motion.div
+        key={skill}
+        className="bg-[#1f1f1f] text-center py-3 rounded-lg text-red-400 shadow hover:shadow-red-600/50 transition"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ delay: i * 0.1 }}
+      >
+        {skill}
+      </motion.div>
+    ))}
+  </div>
+</Section>
 
-      <Section title="Core Competencies" id="services">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Interactive BI Dashboards",
-              desc: "Creating interactive dashboards for healthcare data using Power BI and Tableau.",
-            },
-            {
-              title: "Data Cleaning & Preprocessing",
-              desc: "Handling large datasets in Python and Excel for meaningful insights.",
-            },
-            {
-              title: "Machine Learning Models",
-              desc: "Building basic predictive models and performance evaluation."
-            }
-          ].map((s, i) => (
-            <motion.div key={i} whileHover={{ y: -5 }} className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:shadow-red-500/40 transition">
-              <h4 className="text-red-400 font-semibold mb-2">{s.title}</h4>
-              <p className="text-gray-300 text-sm">{s.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </Section>
+<Section title="Core Competencies" id="services">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      {
+        title: "Data Analysis",
+        desc: "Working with datasets using SQL, Excel, Python, and Power BI to extract useful insights."
+      },
+      {
+        title: "Web Development",
+        desc: "Building basic web applications using HTML, CSS, JavaScript, Node.js, and Express.js."
+      },
+      {
+        title: "Problem Solving",
+        desc: "Applying logical thinking through Java basics and Data Structures & Algorithms."
+      },
+      {
+        title: "Dashboard Development",
+        desc: "Creating interactive dashboards and reports for better data visualization."
+      },
+      {
+        title: "Machine Learning Basics",
+        desc: "Understanding supervised and unsupervised learning concepts through projects."
+      },
+      {
+        title: "Project Development",
+        desc: "Developing academic and personal projects to strengthen practical skills."
+      }
+    ].map((s, i) => (
+      <motion.div
+        key={i}
+        whileHover={{ y: -5 }}
+        className="bg-[#1a1a1a] p-6 rounded-lg shadow-lg hover:shadow-red-500/40 transition"
+      >
+        <h4 className="text-red-400 font-semibold mb-2">{s.title}</h4>
+        <p className="text-gray-300 text-sm">{s.desc}</p>
+      </motion.div>
+    ))}
+  </div>
+</Section>
 
       <Section title="Projects">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -278,7 +307,7 @@ export default function App() {
           {[
             { title: "Data Analyst in Power BI", platform: "DataCamp", link: "https://www.datacamp.com/statement-of-accomplishment/track/9b5aed4fb70ab980a2928ab4998a45de675911c3?raw=1" },
             { title: "Data Analytics & Visualization Job Simulation", platform: "Accenture (via Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/hzmoNKtzvAzXsEqx8_T6kdcdKSTfg2aotxT_AsLubtupozDyQxyTx_1751256684496_completion_certificate.pdf" },
-            { title: "Data Analytics Job Simulation", platform: "Deloitte (via Forage)", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_AsLubtupozDyQxyTx_1751256685736_completion_certificate.pdf" },
+            { title: "Data Analytics Job Simulation", platform: "Deloitte", link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_AsLubtupozDyQxyTx_1751256685736_completion_certificate.pdf" },
             { title: "Microsoft 5 Days Boot Camp SQL", platform: "Microsoft", link: "https://www.cert.devtown.in/verify/2iReRr" },
             { title: "Machine Learning with Generative AI (Summer Training)" , platform: "W3grads | GLA University", link: "https://drive.google.com/file/d/1Dm1Cio_uzmJXw4vEFdLpeZDnLWzpofHn/view?usp=sharing"}
           ].map((cert, i) => (
