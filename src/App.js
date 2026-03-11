@@ -184,26 +184,29 @@ export default function App() {
       </section>
 
       <Section title="About">
-        <motion.div
-          className="text-gray-300 leading-relaxed text-lg space-y-6"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-        >
-          <p>
-            My journey into data began in my Computer Science program, where I discovered a passion for uncovering the stories hidden within raw numbers. I quickly became fascinated with how tools like Python and Power BI could transform complex datasets into clear, actionable insights.
-          </p>
-          <p>
-            In my projects, I have applied tools like <span className="text-red-400">Python, Excel, Power BI, SQL, Pandas, and Machine Learning</span> to turn raw data into meaningful insights. I've worked on real-world datasets, built interactive dashboards, and focused on solving problems with clarity and logic.
-          </p>
-          <p>
-            I am eager to apply my skills in data cleaning, analysis, and visualization to help a company solve complex business challenges. My long-term dream is to start my own business that uses data to drive smart decisions.
-          </p>
-          <p>
-            I believe in learning by doing, improving every day, and stepping outside my comfort zone. This portfolio reflects that mindset — and it's just the beginning.
-          </p>
-        </motion.div>
-      </Section>
+  <motion.div
+    className="text-gray-300 leading-relaxed text-lg space-y-6"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ delay: 0.2 }}
+  >
+    <p>
+      I am a B.Tech 3rd year student with a strong interest in technology and problem solving. During my academic journey, I have developed knowledge in data-related tools such as <span className="text-red-400">SQL, Excel, Power BI, Python, Pandas, and NumPy</span>, which I have used in academic and personal projects to understand and work with data effectively.
+    </p>
+
+    <p>
+      I have also learned web development technologies including <span className="text-red-400">HTML, CSS, JavaScript, Node.js, Express.js, and File System concepts</span>, and I enjoy building practical projects that improve my understanding of how applications work.
+    </p>
+
+    <p>
+      In addition, I have basic knowledge of <span className="text-red-400">Machine Learning, Supervised Learning, Unsupervised Learning, Java programming, and fundamental Data Structures and Algorithms</span>, which strengthen my logical thinking and coding skills.
+    </p>
+
+    <p>
+      I am currently focused on improving my technical abilities, gaining practical experience through projects, and preparing myself for internship and placement opportunities where I can learn, contribute, and grow professionally.
+    </p>
+  </motion.div>
+</Section>
 
       <Section title="Skills">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
