@@ -188,7 +188,7 @@ export default function App() {
               View Projects
             </button>
           </a>
-          <a href="gitesh.pdf" download>
+          <a href="gitesh resume March.pdf" download>
             <button className="border border-red-500 text-red-500 px-4 py-2 rounded-full hover:bg-red-900/30 transition">
               Download Resume
             </button>
